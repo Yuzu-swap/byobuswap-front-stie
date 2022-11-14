@@ -193,6 +193,15 @@ const builders = {
         return `${prefix}/${type}/${data}`
     }
   },
+  sapphiretest:(chainName = '', data: string, type: 'transaction' | 'token' | 'address' | 'block') => {
+    const prefix = `https://testnet.explorer.sapphire.oasis.dev/`
+    switch (type) {
+      case 'transaction':
+        return `${prefix}/tx/${data}`
+      default:
+        return `${prefix}/${type}/${data}`
+    }
+  },
 }
 
 interface ChainObject {
@@ -291,6 +300,10 @@ const chains: ChainObject = {
     chainName: 'Emerald mainnet',
     builder: builders.oasismain
   },
+  [ChainId.OASISETH_SAPPHIRE_TEST]:{
+    chainName: 'Sapphire Testnet',
+    builder: builders.sapphiretest
+  }
 }
 
 export function getExplorerLink(

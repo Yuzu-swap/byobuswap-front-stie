@@ -34,7 +34,7 @@
     "@babel/plugin-transform-modules-commonjs": "^7.19.6",
     "@ethersproject/experimental": "^5.0.1",
     "@liuxingfeiyu/byobu-sdk": "1.0.4",
-    "@liuxingfeiyu/default-token-list": "1.0.30",
+    "@liuxingfeiyu/default-token-list": "1.0.32",
     "@liuxingfeiyu/zoo-core": "1.0.12",
     "@popperjs/core": "^2.4.4",
     "@reach/dialog": "^0.10.3",
@@ -151,7 +151,6 @@
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@liuxingfeiyu/sapphire-paratime": "1.0.13",
     "@sentry/react": "^6.15.0",
     "@sentry/tracing": "^6.15.0",
     "decimal.js": "^10.2.1"
